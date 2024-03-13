@@ -118,7 +118,9 @@ const TokenDetails = () => {
         <span className="text-white text-[32px] font-bold ml-[30px]">
           Contract Address :{" "}
           <Link
-            href={"/"}
+            href={
+              "https://scan.mypinata.cloud/ipfs/bafybeidn64pd2u525lmoipjl4nh3ooa2imd7huionjsdepdsphl5slfowy/#/token/0xee9082DaEA925Be8F79f1b2c457fC9470A104414"
+            }
             target="_blank"
             rel="noreferrer"
             className="underline hover:brightness-75 active:brightness-95 transition-all"

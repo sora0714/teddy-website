@@ -64,7 +64,7 @@ const GuideCard: React.FC<GuideCardProps> = ({
 
 const Guide = () => {
   return (
-    <div className="overflow-hidden mt-16">
+    <div className="container overflow-hidden mt-16">
       <h2 className="text-5xl font-bold ml-20">Guide</h2>
       <span className="text-2xl font-semibold text-[#00186C]/50 ml-20">
         Step by Step
