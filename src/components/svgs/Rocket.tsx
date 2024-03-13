@@ -1,5 +1,5 @@
 interface RocketProps {
-  className?: string
+  className?: string;
 }
 
 const Rocket: React.FC<RocketProps> = ({ className }) => (
@@ -23,6 +23,6 @@ const Rocket: React.FC<RocketProps> = ({ className }) => (
       </clipPath>
     </defs>
   </svg>
-)
+);
 
-export default Rocket
+export default Rocket;
