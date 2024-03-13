@@ -24,21 +24,30 @@ const GuideCard: React.FC<GuideCardProps> = ({
     <div
       className={`relative text-white text-2xl font-extrabold text-center pt-14 pb-12 px-28 w-[1200px] ${
         right
-          ? "-mr-10 rounded-ss-[50px] rounded-es-[50px] bg-[linear-gradient(88.82deg,#454545_0.86%,#000000_100%)]"
-          : "-ml-10 rounded-se-[50px] rounded-ee-[50px] bg-[linear-gradient(91.26deg,#000000_2.48%,#454545_100%)]"
-      } ${className ?? ""}`}
+          ? "-mr-10 rounded-ss-[50px] rounded-es-[50px]"
+          : "-ml-10 rounded-se-[50px] rounded-ee-[50px]"
+      } border-[3px] border-transparent ${className ?? ""}`}
+      style={{
+        background: right
+          ? "linear-gradient(88.82deg,#454545 0.86%,#000000 100%) padding-box,linear-gradient(88.82deg,#00F0FF 0%,#000AFF 24%,#8F00FF 51%,#EA00FE 75%,#FE0000 100%) border-box"
+          : "linear-gradient(91.26deg,#000000 2.48%,#454545 100%) padding-box,linear-gradient(88.82deg,#00F0FF 0%,#000AFF 24%,#8F00FF 51%,#EA00FE 75%,#FE0000 100%) border-box",
+      }}
     >
       <div
         className={`absolute top-0 ${
           right ? "left-0 -translate-x-1/2" : "right-0 translate-x-1/2"
-        } -translate-y-1/2 w-[200px] h-[200px] flex items-center justify-center bg-[#7EA6EC] rounded-full text-[128px] text-white font-extrabold`}
+        } -translate-y-1/2 w-[200px] h-[200px] flex items-center justify-center bg-[#61ccf8] rounded-full text-[128px] text-white font-extrabold`}
       >
         {id}
       </div>
       <div
-        className={`absolute flex items-center justify-center top-0 left-1/2 w-[400px] h-[80px] -translate-y-1/2 -translate-x-1/2 bg-white rounded-[40px] ${
+        className={`absolute flex items-center justify-center top-0 left-1/2 w-[400px] h-[80px] -translate-y-1/2 -translate-x-1/2 border-[3px] border-transparent rounded-[40px] ${
           right ? "rounded-ee-none" : "rounded-es-none"
         }`}
+        style={{
+          background:
+            "linear-gradient(-198deg,#fff,#fff) padding-box,linear-gradient(135deg,#00F0FF 0%,#000AFF 24%,#8F00FF 51%,#EA00FE 75%,#FE0000 98%) border-box",
+        }}
       >
         <Image
           src={image.src}
