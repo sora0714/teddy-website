@@ -24,20 +24,20 @@ const TokenDetails = () => {
 
   return (
     <div>
-      <div className="container flex items-center">
+      <div className="container block 1xl:flex items-center mt-[108px] ">
         <Image
           src={Token.src}
           width={Token.width}
           height={Token.height}
           alt="token"
-          className="rounded-se-[50px] rounded-ee-[50px] w-[800px]"
+          className=" rounded-[50px] 1xl:ml-0 1xl:rounded-se-[50px]  1xl:rounded-ee-[50px]  w-[39vw] "
         />
         <div className="-mt-[79px]">
-          <h2 className="text-5xl font-bold ml-[25px]">The Token</h2>
-          <span className="text-2xl font-semibold text-[#00186C]/50 ml-[25px]">
+          <h2 className="2xl:text-5xl text-[24px] font-bold ml-[25px]">The Token</h2>
+          <span className="2xl:text-2xl text-[16px] font-semibold text-[#00186C]/50 ml-[25px]">
             Token Details
           </span>
-          <div className="relative flex items-center border border-r-0 border-black bg-white rounded-ss-[50px] rounded-es-[50px] py-[22px] -ml-[150px] mt-7">
+          <div className="relative flex items-center border border-r-0 border-black bg-white rounded-ss-[50px] rounded-es-[50px] py-[22px] -ml-[9vw] mt-7 w-[69vw]">
             <Image
               src={Logo.src}
               width={Logo.width}
@@ -45,11 +45,11 @@ const TokenDetails = () => {
               alt="logo"
               className="absolute top-0 left-0 w-[120px] -translate-y-1/2 -translate-x-1/3"
             />
-            <div className="border-r border-black space-y-7 pr-8 pl-[90px]">
+            <div className="border-r border-black space-y-7 pr-8 pl-[2vw]">
               {info.map((item) => (
                 <div
                   key={item.title}
-                  className="text-2xl font-semibold whitespace-nowrap"
+                  className="text-[16px] 2xl:text-2xl font-semibold whitespace-nowrap"
                 >
                   {item.title}:{" "}
                   <span className="font-extrabold">{item.value}</span>
@@ -58,7 +58,7 @@ const TokenDetails = () => {
             </div>
             <div className="ml-8">
               <h3 className="text-4xl font-extrabold">Overview</h3>
-              <p className="text-2xl font-semibold mt-6">
+              <p className="text-[16px] 2xl:text-2xl font-semibold mt-6 pr-7">
                 <span className="font-extrabold">Teddy Bear Inu</span> offers
                 the best of both worlds: the fun of a cute meme coin and the
                 value of an ultra-scarce crypto asset. Every new holder and
@@ -67,8 +67,8 @@ const TokenDetails = () => {
                 following simple supply/demand economics, offering early
                 adopters the potential for significant profits.
               </p>
-              <h3 className="text-4xl font-extrabold mt-6">Key Features</h3>
-              <ul className="text-2xl font-semibold list-disc mt-6 ml-4">
+              <h3 className="2xl:text-4xl text-[20px] font-extrabold mt-6">Key Features</h3>
+              <ul className="2xl:text-2xl text-[16px] font-semibold list-disc mt-6 ml-4">
                 <li>
                   Micro{" "}
                   <span className="font-extrabold text-[#287803]">
@@ -107,15 +107,15 @@ const TokenDetails = () => {
           </div>
         </div>
       </div>
-      <div className="relative mx-auto flex items-center w-fit bg-[linear-gradient(101.95deg,#000000_4.57%,#454545_104.53%)] rounded-full p-1.5 pr-16 -mt-[66px] z-[1]">
+      <div className="relative mx-auto flex items-center w-fit bg-[linear-gradient(101.95deg,#000000_4.57%,#454545_104.53%)] rounded-full p-1.5 pr-16 mt-[66px] z-[1]">
         <Image
           src={Logo.src}
           width={Logo.width}
           height={Logo.height}
           alt="logo"
-          className="w-[78px]"
+          className="w-[42px] 2xl:w-[78px]"
         />
-        <span className="text-white text-[32px] font-bold ml-[30px]">
+        <span className="text-white text-[16px] 2xl:text-[32px] font-bold ml-[30px]">
           Contract Address :{" "}
           <Link
             href={

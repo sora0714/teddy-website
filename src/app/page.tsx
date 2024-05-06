@@ -9,6 +9,8 @@ import Roadmap from "@/components/Roadmap";
 import Swap from "@/components/Swap";
 import Team from "@/components/Team";
 import TokenDetails from "@/components/TokenDetails";
+import Subscribe from "@/components/Subscribe";
+
 
 export default function Home() {
   return (
@@ -16,14 +18,15 @@ export default function Home() {
       <Header />
       <Landing />
       <Backstory />
-      <TokenDetails />
-      <Guide />
-      <Swap />
-      <Team />
-      <Dapps />
-      <Holdings />
-      <Roadmap />
-      <Footer />
+      <Team/>
+      <Guide/>
+      <Swap/>
+      <TokenDetails/>
+      <Dapps/>
+      <Holdings/>
+      <Roadmap/>
+      <Subscribe/>
+      <Footer/>
     </>
   );
 }

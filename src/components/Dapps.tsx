@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Dapps = () => {
   return (
-    <div className="mt-32">
+    <div className="mt-32 overflow-hidden">
       <div className="container pl-[66px]">
         <h2 className="text-5xl font-bold">DAPPS</h2>
         <span className="text-2xl font-semibold text-[#00186C]/50">
@@ -18,14 +18,14 @@ const Dapps = () => {
         </span>
       </div>
       <div className="bg-black py-[60px] mt-9">
-        <div className="container flex justify-between">
+        <div className="container block 1xl:flex justify-between">
           <div className="flex flex-col items-center w-full mx-12">
-            <span className="text-5xl font-bold text-white underline">DEX</span>
+            <span className="text-[24px] 2xl:text-5xl font-bold text-white underline">DEX</span>
             <Link
               href={"/"}
               target="_blank"
               rel="noreferrer"
-              className="mt-20 hover:scale-105 transition-all"
+              className="mt-20 hover:scale-105 transition-all w-[156px] 2xl:w-[336px]"
             >
               <Image
                 src={PulseX.src}
@@ -50,14 +50,14 @@ const Dapps = () => {
           </div>
           <div className="w-px bg-white shadow-[0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF]" />
           <div className="flex flex-col items-center w-full mx-12">
-            <span className="text-5xl font-bold text-white underline">
+            <span className="text-[24px] 2xl:text-5xl font-bold text-white underline">
               Bridge
             </span>
             <Link
               href={"/"}
               target="_blank"
               rel="noreferrer"
-              className="mt-28 hover:scale-105 transition-all"
+              className="mt-28 hover:scale-105 transition-all w-[252px] 2xl:w-[574px]"
             >
               <Image
                 src={PulseBridge.src}
@@ -70,7 +70,7 @@ const Dapps = () => {
               href={"/"}
               target="_blank"
               rel="noreferrer"
-              className="mt-[120px] hover:scale-105 transition-all"
+              className="mt-[120px] hover:scale-105 transition-all w-[196px] 2xl:w-[424px]"
             >
               <Image
                 src={PortalX.src}
@@ -82,14 +82,14 @@ const Dapps = () => {
           </div>
           <div className="w-px bg-white shadow-[0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF,0_0_8.5px_#FFF]" />
           <div className="flex flex-col items-center w-full mx-12">
-            <span className="text-5xl font-bold text-white underline">
+            <span className="text-[24px] 2xl:text-5xl font-bold text-white underline">
               Charts
             </span>
             <Link
               href={"/"}
               target="_blank"
               rel="noreferrer"
-              className="mt-[86px] hover:scale-105 transition-all"
+              className="mt-[86px] hover:scale-105 transition-all w-[245px]"
             >
               <Image
                 src={Dextools.src}
@@ -102,7 +102,7 @@ const Dapps = () => {
               href={"/"}
               target="_blank"
               rel="noreferrer"
-              className="mt-[120px] hover:scale-105 transition-all"
+              className="mt-[140px] hover:scale-105 transition-all w-[212px]"
             >
               <Image
                 src={Dexscreener.src}

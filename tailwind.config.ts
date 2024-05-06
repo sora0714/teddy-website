@@ -9,7 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        "0xl":"0px",
+        "1xl":"1100px",
+        "2xl":'1500px',
         "3xl": "1920px",
+        "1ml":"430px",
+        "2ml": "970px",
       },
       container: {
         screens: {

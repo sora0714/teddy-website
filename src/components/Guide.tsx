@@ -22,7 +22,7 @@ const GuideCard: React.FC<GuideCardProps> = ({
 }) => {
   return (
     <div
-      className={`relative text-white text-2xl font-extrabold text-center pt-14 pb-12 px-28 w-[1200px] ${
+      className={`relative text-white text-[12px] 2ml:text-[16px]font-extrabold text-center py-[22px] px:[17px] 2ml:pt-[53px] 2ml:pb-[53px] 2ml:px-[72px] w-[100%] 1ml:w-[428px] 2ml:w-[840px] 2xl:w-[1200px] 2xl:text-[24px] 2xl:pt-14 2xl:pb-12  2xl:px-28 ${
         right
           ? "-mr-10 rounded-ss-[50px] rounded-es-[50px]"
           : "-ml-10 rounded-se-[50px] rounded-ee-[50px]"
@@ -36,12 +36,12 @@ const GuideCard: React.FC<GuideCardProps> = ({
       <div
         className={`absolute top-0 ${
           right ? "left-0 -translate-x-1/2" : "right-0 translate-x-1/2"
-        } -translate-y-1/2 w-[200px] h-[200px] flex items-center justify-center bg-[#61ccf8] rounded-full text-[128px] text-white font-extrabold`}
+        } -translate-y-1/2 w-[50px] h-[50px] 2xl:w-[200px] 2xl:h-[200px] 2ml:w-[86px] 2ml:h-[86px] flex items-center justify-center bg-[#61ccf8] rounded-full 2xl:text-[128px] text-[30px] 2ml:text-[70px] text-white font-extrabold`}
       >
         {id}
       </div>
       <div
-        className={`absolute flex items-center justify-center top-0 left-1/2 w-[400px] h-[80px] -translate-y-1/2 -translate-x-1/2 border-[3px] border-transparent rounded-[40px] ${
+        className={`absolute flex items-center justify-center top-0 left-1/2 2xl:w-[400px] 2xl:h-[80px]  xl:w-[258px] -translate-y-1/2 -translate-x-1/2 border-[3px] border-transparent rounded-[40px] ${
           right ? "rounded-ee-none" : "rounded-es-none"
         }`}
         style={{
@@ -54,7 +54,7 @@ const GuideCard: React.FC<GuideCardProps> = ({
           width={image.width}
           height={image.height}
           alt="image"
-          className=""
+          className="w-[80%]"
         />
       </div>
       {children}
@@ -64,8 +64,8 @@ const GuideCard: React.FC<GuideCardProps> = ({
 
 const Guide = () => {
   return (
-    <div className="container overflow-hidden mt-16">
-      <h2 className="text-5xl font-bold ml-20">Guide</h2>
+    <div className="container overflow-hidden mt-16 mb-[50px]">
+      <h2 className="  2ml:text-5xl font-bold ml-20">Guide</h2>
       <span className="text-2xl font-semibold text-[#00186C]/50 ml-20">
         Step by Step
       </span>

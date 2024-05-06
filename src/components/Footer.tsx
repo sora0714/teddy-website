@@ -27,7 +27,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="flex justify-center relative overflow-hidden bg-white pt-10">
+    <footer className="flex justify-center relative overflow-hidden bg-white pt-10 px-[30px] 2xl:px-[162px]">
       <div className="container px-5 md:px-10 lg:px-[150px] 3xl:px-0 z-[1]">
         <div className="flex max-lg:flex-wrap justify-between lg:space-x-16">
           <div className="max-lg:w-full">
@@ -39,9 +39,9 @@ const Footer = () => {
                 alt="logo"
                 className="w-[90px]"
               />
-              <span className="text-[40px] font-black">TEDDY BEAR INU</span>
+              <span className="text-[20px] 2xl:text-[40px] font-black">TEDDY BEAR INU</span>
             </div>
-            <p className="text-[#000B33] text-xl font-medium leading-[34px] mt-3">
+            <p className="text-[#000B33] text-[20px] 2xl:text-xl font-medium leading-[34px] mt-3">
               Join the Teddy Bear INU community today and embark on a journey of
               fun, value, and potential profits. With a strong community backing
               and innovative features, Teddy Bear INU is paving the way for a
@@ -50,8 +50,8 @@ const Footer = () => {
               Bear INU now!
             </p>
           </div>
-          <div className="flex flex-col min-w-[80px] lg:min-w-[130px] xl:min-w-[170px] pt-6 md:pt-9">
-            <h4 className="font-bold lg:font-medium text-sm md:text-2xl">
+          <div className=" hidden 2ml:flex flex-col min-w-[80px] lg:min-w-[130px] xl:min-w-[170px] pt-6 md:pt-9 ">
+            <h4 className="font-bold lg:font-medium text-[18px] 2xl:text-sm md:text-2xl">
               Dapps
             </h4>
             <Link

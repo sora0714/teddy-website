@@ -24,7 +24,7 @@ const HoldingCard: React.FC<HoldingCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex items-center bg-white p-2.5 rounded-ss-full rounded-es-full w-full ${
+      className={`flex items-center bg-white p-2.5 rounded-full 1xl:rounded-se-full rounded-es-full w-full ${
         className ?? ""
       }`}
     >
@@ -33,11 +33,11 @@ const HoldingCard: React.FC<HoldingCardProps> = ({
         width={image.width}
         height={image.height}
         alt={title}
-        className="w-[180px] h-[180px] min-w-[180px] rounded-full"
+        className="w-[64px] 2ml:w-[80px] 2xl:w-[180px]  rounded-full"
       />
-      <div className="ml-20 flex flex-col">
-        <span className="text-[40px] font-semibold">{title}</span>
-        <span className="text-[56px] font-black">{value} TBI</span>
+      <div className="ml-[10px] 1xl:ml-20 flex flex-col">
+        <span className="text-[12px] 2ml:text-[20px] 2xl:text-[40px] font-semibold">{title}</span>
+        <span className="text-[15px] 2ml:text-[20px] 2xl:text-[56px] font-black">{value} TBI</span>
       </div>
     </div>
   );
@@ -79,22 +79,22 @@ const Holdings = () => {
   ];
 
   return (
-    <div className="container mt-20">
+    <div className="container mt-[55px]">
       <div className="mr-[66px] flex flex-col">
-        <h2 className="text-5xl font-bold text-right">TBI Holdings Rank</h2>
-        <span className="text-2xl font-semibold text-[#00186C]/50 text-right">
+        <h2 className="text-[24px] 2xl:text-5xl font-bold text-right">TBI Holdings Rank</h2>
+        <span className="text-[16px] 2xl:text-2xl font-semibold text-[#00186C]/50 text-right">
           Check your ranking
         </span>
       </div>
-      <div className="flex items-center mt-10">
+      <div className="block px-[22vw] 1xl:flex 1xl:px-0 items-center mt-10">
         <Image
           src={HoldingsImg.src}
           width={HoldingsImg.width}
           height={HoldingsImg.height}
           alt="holding"
-          className="rounded-se-[50px] rounded-ee-[50px] w-[884px] h-[1235px] object-cover object-center mr-16"
+          className="rounded-[50px] 1xl:rounded-se-[50px] rounded-ee-[50px] w-[55vw]  object-cover object-center mr-16"
         />
-        <div className="flex flex-col space-y-9 w-full">
+        <div className="flex flex-col space-y-2 2xl:space-y-9 w-full">
           {info.map((item) => (
             <HoldingCard
               key={item.title}
